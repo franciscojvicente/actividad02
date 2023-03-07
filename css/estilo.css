@@ -1,0 +1,499 @@
+/*----------------CSS GENERAL----------------------*/
+/*NO INCLUYE TAMAÑOS*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+nav li {
+  list-style: none; /*saca puntitos*/
+  font-family: "Petit-Formal-Script";
+}
+
+nav a {
+  text-decoration: none; /*saca subrayado*/
+}
+header {
+  background-color: #c7e755;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Hi-Melody";
+}
+
+#contenedor-menu {
+  background-color: #f30d01;
+}
+
+#contenedor-menu a {
+  color: aliceblue;
+}
+
+#menuprincial {
+  background-color: azure;
+}
+main {
+  background-color: #182747;
+  padding: 0.7em;
+}
+article {
+  background-color: white;
+  padding: 1em;
+}
+
+footer {
+  height: 8vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer img {
+  height: 5vh;
+  margin-left: 1em;
+  margin-top: 0.5em;
+}
+
+i {
+  margin-left: 1em;
+}
+
+body {
+  font-family: "Petit-Formal-Script";
+}
+
+/*---------------------FIN-----------------------*/
+
+/*-------------------------------------------------------CSS MÓVILES----------------------------------------------*/
+@media (min-width: 576px) {
+  #menuprincipal li {
+    background-color: #ff8736;
+    margin: 0.1em;
+    padding: 0.1em;
+    display: block;
+  }
+
+  nav li {
+    padding: 0.1em;
+    margin: 0.1em;
+  }
+
+  header {
+    height: 10vh;
+  }
+
+  #contendor-menu #menuprincipal li {
+    margin-bottom: 0.1em;
+    height: 13vh;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  /**columnas**/
+  main {
+    padding-top: 0.4em;
+  }
+
+  #info main {
+    min-height: 90vh;
+  }
+
+  article {
+    min-height: 20vh;
+    min-width: 20vh;
+    margin: 0.2em;
+  }
+
+  .columnas {
+    column-count: 1;
+    text-align: justify;
+  }
+
+  .columnas h1 {
+    text-align: center;
+    font-size: 2em;
+  }
+
+  .columnas h2 {
+    text-align: center;
+  }
+
+  .columnas h3 {
+    text-decoration: underline;
+    text-align: center;
+  }
+
+  .columnas h1,
+  h2,
+  h3,
+  p {
+    padding: 0.7em;
+  }
+
+  /*tabla*/
+  table {
+    border-collapse: collapse;
+    min-width: 90%;
+    margin: 0 auto;
+  }
+
+  table th,
+  table td {
+    border: 0.2em solid sandybrown;
+  }
+
+  table td {
+    background-color: white;
+  }
+
+  /*ahora para que la tabla sea responsive*/
+  table #tabla-encabezado {
+    display: none; /*oculta fila de títulos*/
+  }
+
+  table tr {
+    display: flex;
+    flex-direction: column; /*muestra una fila como una columna*/
+    margin-bottom: 0.5em; /*separa filas*/
+  }
+
+  table td:nth-of-type(1):before {
+    content: "Altura";
+  }
+  table td:nth-of-type(2):before {
+    content: "Menos de 1,50 mts";
+  }
+  table td:nth-of-type(3):before {
+    content: "1.50 a 1.70 mts";
+  }
+  table td:nth-of-type(4):before {
+    content: "1.63 a 1.70 mts";
+  }
+  table td:nth-of-type(5):before {
+    content: "1.75 a 1.82 mts";
+  }
+  table td:nth-of-type(6):before {
+    content: "Más de 1.87 mts";
+  }
+
+  /*más estética*/
+  caption {
+    background-color: aliceblue;
+    font-weight: bolder;
+  }
+
+  table td:before {
+    background-color: #c7e755;
+
+    margin-right: 0.5em;
+  }
+
+  tr td {
+    text-align: center;
+  }
+
+  img {
+    text-align: center;
+  }
+
+  figure {
+    width: 35%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  figure #im2 {
+    width: 50%;
+  }
+
+  figure #im3 {
+    width: 60%;
+  }
+
+  figure #im4 {
+    width: 70%;
+  }
+
+  figure #im5 {
+    width: 80%;
+  }
+
+  figure #im6 {
+    width: 90%;
+  }
+
+  #abajo td {
+    text-align: left;
+  }
+  /*GALERÍA*/
+
+  #galería img {
+    width: 77%;
+    height: 30%;
+    margin: 1em;
+  }
+
+  #contenedor-imagenes #galería {
+    background-image: url("https://img.freepik.com/foto-gratis/textura-cesped-artificial-fondo_35148-182.jpg");
+    background-repeat: repeat; /*La imagen se muestra, pero no se repite.*/
+    background-size: cover; /*Por defecto, el tamaño de la
+    imagen de fondo se mostrará al máximo de su tamaño.*/
+  }
+
+  #galería {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  figcaption {
+    color: black;
+    background-color: aliceblue;
+  }
+
+  #contenedor-imagenes main h1 {
+    color: white;
+    font-size: x-large;
+    text-align: center;
+  }
+}
+
+/*-------------------FIN-----------------------*/
+
+/*----------------------------------------------------CSS TABLETS------------------------------------------------------------------*/
+@media all and (min-width: 768px) {
+  #contenedor-enlaces a {
+    padding: 1em;
+  }
+
+  /*columnas*/
+  .columnas {
+    column-count: 2;
+    text-align: justify;
+  }
+
+  .columnas h1 {
+    text-align: center;
+    font-size: 2em;
+  }
+
+  .columnas h2 {
+    text-align: center;
+  }
+
+  .columnas h3 {
+    text-decoration: underline;
+    text-align: center;
+  }
+
+  .columnas h1,
+  h2,
+  h3,
+  p {
+    padding: 0.7em;
+  }
+
+  /*GALERÍA*/
+
+  #galería img {
+    width: 24vw;
+    height: 27vw;
+    margin: 1em;
+  }
+
+  #contenedor-imagenes #galería {
+    background-image: url("https://img.freepik.com/foto-gratis/textura-cesped-artificial-fondo_35148-182.jpg");
+    background-repeat: repeat; /*La imagen se muestra, pero no se repite.*/
+    background-size: cover; /*Por defecto, el tamaño de la
+    imagen de fondo se mostrará al máximo de su tamaño.*/
+  }
+
+  #galería {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  figcaption {
+    color: black;
+    background-color: aliceblue;
+  }
+  #contenedor-imagenes main h1 {
+    color: white;
+    font-size: x-large;
+    text-align: center;
+  }
+}
+
+/*------------------FIN-----------------------*/
+
+/*...............-----------------------------------------.....CSS MONITORES---------------------------------------------------------*/
+@media (min-width: 1200px) {
+  #contenedor-enlaces a {
+    padding: 1em;
+  }
+
+  #menuprincipal {
+    background-color: chartreuse;
+  }
+
+  #menuprincipal #contenedor-enlaces {
+    height: 2.7vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  #contenedor-enlaces li a {
+    vertical-align: middle;
+  }
+
+  #contenedor-enlaces li {
+    padding: 0.3em;
+  }
+
+  #menuprincipal a {
+    color: white;
+    transition-property: color;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+  }
+
+  #menuprincipal a:hover {
+    color: black;
+  }
+
+  /*columnas*/
+
+  .columnas {
+    column-count: 3;
+    text-align: justify;
+  }
+
+  .columnas h1 {
+    text-align: center;
+    font-size: 2em;
+  }
+
+  .columnas h2 {
+    text-align: center;
+  }
+
+  .columnas h3 {
+    text-decoration: underline;
+    text-align: center;
+  }
+
+  .columnas h1,
+  h2,
+  h3,
+  p {
+    padding: 0.7em;
+  }
+
+  /*tabla*/
+
+  table {
+    width: 60%;
+    background-color: aliceblue;
+  }
+  table #tabla-encabezado {
+    display: table-row;
+  }
+
+  table tr {
+    display: table-row;
+  }
+
+  table td:before {
+    display: none;
+  }
+
+  table td {
+    text-align: center;
+  }
+
+  #abajo td {
+    background-color: orange;
+    color: white;
+  }
+
+  /*más estética*/
+  caption {
+    background-color: aliceblue;
+    font-weight: bolder;
+  }
+
+  table td:before {
+    background-color: #c7e755;
+
+    margin-right: 0.5em;
+  }
+
+  figure {
+    width: 100%;
+
+    text-align: center;
+  }
+
+  figure #im2 {
+    width: 60%;
+  }
+
+  figure #im3 {
+    width: 70%;
+  }
+
+  figure #im4 {
+    width: 80%;
+  }
+
+  figure #im5 {
+    width: 90%;
+  }
+
+  figure #im6 {
+    width: 100%;
+  }
+
+  #galería img {
+    width: 15vw;
+    height: 19vw;
+    margin: 1em;
+  }
+
+  #contenedor-imagenes #galería {
+    background-image: url("https://img.freepik.com/foto-gratis/textura-cesped-artificial-fondo_35148-182.jpg");
+    background-repeat: repeat; /*La imagen se muestra, pero no se repite.*/
+    background-size: cover; /*Por defecto, el tamaño de la
+    imagen de fondo se mostrará al máximo de su tamaño.*/
+  }
+
+  #galería {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  figcaption {
+    color: black;
+    background-color: aliceblue;
+  }
+
+  #galería figure {
+    width: 28%;
+  }
+
+  #contenedor-imagenes main h1 {
+    color: white;
+    font-size: x-large;
+    text-align: center;
+  }
+}
+/*----------------------------------------------------FIN--------------------------------------------------------------------------------*/
